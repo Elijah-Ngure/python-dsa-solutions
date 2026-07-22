@@ -34,21 +34,21 @@
 # 1. single Interval -- loop only run once adding the interval into the output list
 # 2. All intervals overlap -- merges to one interval (start i, end n-1)
 
-class Solution:
-    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        output = []
-        intervals.sort(key=lambda x: x[0])
-        # Traverse the list 
-        for period in intervals:
-            if not output:
-                output.append(period)
-                continue
-            
-            if period[0] <= output[-1][1]:
-                output[-1][1] = max(output[-1][1], period[1])
-            
-            else:
-                output.append(period)
+
+def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+    output = []
+    intervals.sort(key=lambda x: x[0])
+    # Traverse the list 
+    for period in intervals:
+        if not output:
+            output.append(period)
+            continue
         
-        return output
+        if period[0] <= output[-1][1]:
+            output[-1][1] = max(output[-1][1], period[1])
         
+        else:
+            output.append(period)
+    
+    return output
+    
