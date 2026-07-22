@@ -1,5 +1,3 @@
-```python
-
 # a.) PROBLEM
 # LeetCode #56: Merge Intervals
 # Difficulty: Medium
@@ -53,5 +51,4 @@ class Solution:
                 output.append(period)
         
         return output
-```
         
