@@ -55,17 +55,21 @@ Every solution file follows this structure:
 # b.) PROBLEM STATEMENT 
 # [summary of the problem]
 #
-# c.) APPROACH
+# c.) INTUITION
 # [Explanation of the chosen strategy]
 #
-# d.) COMPLEXITY
-# Time: O(?) — explanation # Space: O(?) — explanation
 #
-# e.) EDGE CASES
-# [List of edge cases considered] def solution(...):
-# inline comments on non-obvious logic ...
-# f.) TEST CASES
-# [manual test calls with expected output noted]
+# d.) ALGORITHM
+# [The steps and pseudo code for the chosen algorithm used]
+#
+#
+# e.) COMPLEXITY
+# Time: O(?) — explanation
+# Space: O(?) — explanation
+#
+# f.) EDGE CASES
+# [List of edge cases considered for the chosen algorithm]
+#
 
 ```
 
